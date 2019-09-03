@@ -210,6 +210,7 @@ class EightPuzzleNode:
         while currentNode.parent is not None:
             PathCost.append(currentNode)
             currentNode = currentNode.parent
+        PathCost.reverse()
         return PathCost
 
 
